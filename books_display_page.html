@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Display Page - Bookshaala</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+      .book-card {
+        height: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+      }
+      .book-card img {
+        height: 250px;
+        width: 100%;
+        object-fit:contain;
+        border-radius: 10px 10px 0 0;
+      }
+      .book-title {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10px 0;
+        text-align: center;
+      }
+      .btn-view-more {
+        background-color: #ff9933;
+        color: #fff;
+        border: none;
+        transition: background-color 0.3s ease;
+      }
+      .btn-view-more:hover {
+        background-color: #cc7a00;
+      }
+      .book-card:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+
+<header class="bg-dark text-white p-4 text-center">
+  <h1 class="fw-bold">Bookshaala - Books Collection</h1>
+</header>
+
+<!-- Books Display Section -->
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    
+    <!-- Single Book Card -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book1.jpg" alt="Book Cover">
+        <div class="p-3">
+          <h5 class="book-title">The Psychology of Money</h5>
+          <a href="http://127.0.0.1:5500/the_psy_of_money.html" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeatable Book Card -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book2.jpg" alt="Book Cover">
+        <div class="p-3">
+          <h5 class="book-title">Atomic Habits</h5>
+          <a href="http://127.0.0.1:5500/atomic_habits.html" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book3.jpg" alt="Book Cover">
+        <div class="p-3">
+          <h5 class="book-title">Rich Dad Poor Dad</h5>
+          <a href="http://127.0.0.1:5500/rich_dad_poor_dad.html" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book4.jpg" alt="Book Cover">
+        <div class="p-3">
+          <h5 class="book-title">Think and Grow Rich</h5>
+          <a href="http://127.0.0.1:5500/think_and_grow_rich.html" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book5.jpg" alt="Ikigai">
+        <div class="p-3">
+          <h5 class="book-title">Ikigai</h5>
+          <a href="http://127.0.0.1:5500/ikigai.html" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 6 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book6.jpg" alt="Deep Work">
+        <div class="p-3">
+          <h5 class="book-title">Deep Work</h5>
+          <a href="/books/deep-work" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 7 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book7.jpg" alt="Can't Hurt Me">
+        <div class="p-3">
+          <h5 class="book-title">Can't Hurt Me</h5>
+          <a href="/books/cant-hurt-me" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 8 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book8.jpg" alt="The 5 AM Club">
+        <div class="p-3">
+          <h5 class="book-title">The 5 AM Club</h5>
+          <a href="/books/5am-club" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 9 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book9.jpg" alt="Sapiens">
+        <div class="p-3">
+          <h5 class="book-title">Sapiens</h5>
+          <a href="/books/sapiens" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 10 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book10.jpg" alt="The Alchemist">
+        <div class="p-3">
+          <h5 class="book-title">The Alchemist</h5>
+          <a href="/books/alchemist" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 11 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book11.jpg" alt="Ego is the Enemy">
+        <div class="p-3">
+          <h5 class="book-title">Ego is the Enemy</h5>
+          <a href="/books/ego-is-the-enemy" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card 12 -->
+    <div class="col">
+      <div class="book-card bg-white">
+        <img src="/images/book12.jpg" alt="Zero to One">
+        <div class="p-3">
+          <h5 class="book-title">Zero to One</h5>
+          <a href="/books/zero-to-one" class="btn btn-view-more d-block">View More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Add more book cards here as needed -->
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
